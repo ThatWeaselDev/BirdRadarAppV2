@@ -1,0 +1,78 @@
+<!-- fragment_filter.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginbkg">
+
+    <!-- Existing content of the filter fragment goes here -->
+
+    <!-- Add the filter options -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/filterTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filter Options"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/radiusLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotspot radius"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp" />
+
+            <SeekBar
+                android:id="@+id/radiusSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:max="50" />
+
+            <TextView
+                android:id="@+id/selectedRadiusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" 0 Km"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/unitToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Miles"
+                android:textOff="Km"
+                android:checked="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_toggle_button"
+                android:textColor="#FFFFFF" /> <!-- Set text color to white (#FFFFFF) -->
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

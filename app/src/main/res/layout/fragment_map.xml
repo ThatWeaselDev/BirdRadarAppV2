@@ -1,0 +1,36 @@
+<!-- fragment_map.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Google Map Container -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Recenter Button -->
+    <ImageButton
+        android:id="@+id/btnRecenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_gps_fixed_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="Recenter Button"
+        android:background="@android:color/transparent" />
+
+    <!-- Layer Selection Button -->
+    <ImageButton
+        android:id="@+id/btnLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_layers_24"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="Layer Selection Button"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

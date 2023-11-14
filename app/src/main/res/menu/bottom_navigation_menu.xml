@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_map"
+        android:title="Map"
+        android:icon="@drawable/ic_map"
+        />
+
+    <item
+        android:id="@+id/menu_filter"
+        android:title="Filters"
+        android:icon="@drawable/ic_filter"
+        />
+
+    <item
+        android:id="@+id/menu_bird"
+        android:title="Bird"
+        android:icon="@drawable/ic_bird"
+        />
+    <item
+        android:id="@+id/menu_journal"
+        android:title="Journal"
+        android:icon="@drawable/ic_journal"
+        />
+
+
+</menu>
